@@ -12,6 +12,9 @@ html {
     padding: 0;
 }
 
+html, body {
+    height: 100%;
+}
 ul {
     list-style: none;
 }
@@ -19,6 +22,12 @@ ul {
 a {
     text-decoration: none;
     color: inherit;
+}
+
+.wrapper {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
@@ -31,9 +40,10 @@ body {
     font-size: 16px;
     font-weight: 400;
     font-family: 'Inter', sans-serif;
+    line-height: 1.3;
 }
 .header {
-    background: #151515;
+    background: $bgcolorNavFooter;
 }
 
 .header-main {
@@ -57,4 +67,57 @@ body {
     color: $colorTextHeader;
     text-transform: uppercase;
     font-weight: 700;
+}
+
+.footer {
+    background: $bgcolorNavFooter;
+    padding: 50px 0 32px;
+    color: $colorTextFooter;
+}
+
+.footer__menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+.footer__menu-list {
+    max-width: 250px;
+}
+
+.footer__menu-title {
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+
+.footer__menu-item + .footer__menu-item{
+    padding-top: 20px;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 52px;
+}
+
+.footer__copy {
+    max-width: 806px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.footer__copy-text {
+    font-size: 12px;
+}
+
+.copy__nav-list {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+.main {
+    flex-grow: 1;
 }
