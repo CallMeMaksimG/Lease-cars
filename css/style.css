@@ -52,6 +52,10 @@ body {
   background: #151515;
 }
 
+.header-main {
+  background: transparent;
+}
+
 .header__inner {
   padding-top: 40px;
   padding-bottom: 45px;
