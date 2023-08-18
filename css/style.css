@@ -52,6 +52,14 @@ body {
   background: #151515;
 }
 
+.header-main {
+  background: transparent;
+  position: absolute;
+  z-index: 5;
+  right: 0;
+  left: 0;
+}
+
 .header__inner {
   padding-top: 40px;
   padding-bottom: 45px;
@@ -143,4 +151,66 @@ body {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+}
+
+.top {
+  position: absolute;
+  z-index: 5;
+  padding-top: 250px;
+  color: #fff;
+  text-align: center;
+  padding-bottom: 50px;
+  right: 0;
+  left: 0;
+}
+
+.title {
+  padding-bottom: 40px;
+  font-size: 96px;
+  font-weight: 700;
+}
+
+.top__link {
+  background: #151515;
+  padding: 23px;
+  max-width: 430px;
+  width: 100%;
+  display: inline-block;
+  font-size: 36px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.swiper::after {
+  content: "";
+  background: rgba(21, 21, 21, 0.3);
+  position: absolute;
+  z-index: 5;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.swiper-slide {
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  bottom: 50px;
+}
+
+.swiper-pagination-bullet {
+  width: 120px;
+  height: 3px;
+  background: #151515;
+  border-radius: 0;
+  opacity: 1;
+  margin: 0 15px !important;
+}
+.swiper-pagination-bullet-active {
+  height: 6px;
+  background-color: #fff;
 }
