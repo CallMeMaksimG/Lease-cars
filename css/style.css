@@ -41,6 +41,13 @@ a {
   padding: 0 10px;
 }
 
+.section-title {
+  margin-bottom: 50px;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+}
+
 body {
   font-size: 16px;
   font-weight: 400;
@@ -213,4 +220,96 @@ body {
 .swiper-pagination-bullet-active {
   height: 6px;
   background-color: #fff;
+}
+
+.why-lease {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.why-lease__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  text-align: center;
+}
+
+.why-lease__item-img {
+  margin-bottom: 30px;
+}
+
+.why-lease__title {
+  margin-bottom: 30px;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.why-lease__text {
+  text-align: left;
+}
+
+.how-does {
+  padding-bottom: 150px;
+}
+
+.how-does__inner {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.how-does__text {
+  max-width: 580px;
+  margin: 0 auto;
+}
+
+.how-does__title {
+  font-size: 24px;
+  font-weight: 700;
+  padding-top: 50px;
+}
+
+.how-does__list {
+  padding-top: 50px;
+  padding-bottom: 70px;
+  counter-reset: myCounter;
+}
+
+.how-does__item {
+  list-style: none;
+  width: 270px;
+  position: relative;
+  margin-left: auto;
+  -webkit-box-sizing: content-box;
+          box-sizing: content-box;
+  padding: 19px 0 19px 240px;
+  min-width: 63px;
+}
+.how-does__item::before {
+  counter-increment: myCounter;
+  content: counter(myCounter);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #06F;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.how-does__item + .how-does__item {
+  margin-top: 40px;
 }
