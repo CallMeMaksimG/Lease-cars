@@ -313,3 +313,49 @@ body {
 .how-does__item + .how-does__item {
   margin-top: 40px;
 }
+
+.video {
+  padding-bottom: 150px;
+}
+
+.video__title {
+  margin-bottom: 20px;
+}
+
+.video__text {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  padding-bottom: 50px;
+}
+
+.video__content {
+  display: block;
+  margin: 0 auto;
+}
+
+.important {
+  padding-bottom: 150px;
+}
+
+.important__title {
+  margin-bottom: 20px;
+}
+
+.important__text {
+  max-width: 580px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+.important__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+.important__item-img {
+  margin-bottom: 20px;
+}
