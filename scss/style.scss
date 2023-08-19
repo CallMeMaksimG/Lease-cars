@@ -81,6 +81,10 @@ body {
     font-weight: 700;
 }
 
+.menu__list-link_active {
+    color: $blueColor;
+}
+
 .footer {
     background: $bgcolorNavFooter;
     padding: 50px 0 32px;
@@ -402,7 +406,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     gap: 40px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 .blog__item {
@@ -427,6 +431,85 @@ body {
 }
 
 .blog__link {
+    @include darkBtn;
+    width: 225px;
+    margin: 0 auto;
+    display: block;
+}
+
+.choose {
+    padding: 100px 0 150px;
+}
+
+.tabs {
+    margin-bottom: 70px;
+}
+
+.tabs__btn {
+    padding: 0 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 80px;
+    padding-bottom: 100px;
+}
+
+.tabs__btn-item {
+    font-size: 24px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    background: transparent;
+    padding: 0;
+}
+
+.tabs__btn-item_active {
+    color: $blueColor;
+}
+
+.tabs__content-item {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 100px 40px;
+}
+
+.card {
+    text-align: center;
+}
+
+.card__img {
+    // margin-bottom: 20px;
+    display: block;
+}
+
+.card__content {
+    padding: 0 5px;
+    border: 1px solid $blueColor;
+    border-top: 0;
+}
+
+.card__title {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.card__text {
+    margin-bottom: 20px;
+}
+
+.card__price {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.card__link {
+    @include transparentBtn;
+    display: block;
+}
+
+.choose__link {
     @include darkBtn;
     width: 225px;
     margin: 0 auto;

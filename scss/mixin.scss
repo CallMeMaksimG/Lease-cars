@@ -36,3 +36,17 @@
         background: $darkButtonColor;
     }
 }
+
+@mixin transparentBtn {
+    background: transparent;
+    color: $blueColor;
+    width: 100%;
+    display: inline-block;
+    border: 1px solid $blueColor;
+    border-top: 0;
+
+    &:hover {
+        background: $blueColor;
+        color: #fff;
+    }
+}
