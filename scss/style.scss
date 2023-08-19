@@ -36,6 +36,13 @@ a {
     padding: 0 10px;
 }
 
+.section-title {
+    margin-bottom: 50px;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
 body {
     font-size: 16px;
     font-weight: 400;
@@ -48,6 +55,10 @@ body {
 
 .header-main {
     background: transparent;
+    position: absolute;
+    z-index: 5;
+    right: 0;
+    left: 0;
 }
 
 .header__inner {
@@ -120,4 +131,203 @@ body {
 
 .main {
     flex-grow: 1;
+}
+
+.top {
+    position: absolute;
+    z-index: 5;
+    padding-top: 250px;
+    color: $colorTextHeader;
+    text-align: center;
+    padding-bottom: 50px;
+    right: 0;
+    left: 0;
+}
+
+.title {
+    
+    padding-bottom: 40px;
+    font-size: 96px;
+    font-weight: 700;
+}
+
+.top__link {
+    background: $darkButtonColor;
+    padding: 23px;
+    max-width: 430px;
+    width: 100%;
+    display: inline-block;
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.swiper {
+    &::after {
+        content: '';
+        background: rgba(21, 21, 21, .3);
+        position: absolute;
+        z-index: 5;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+    }
+}
+
+.swiper-slide {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+
+    .swiper-pagination-bullets {
+        &.swiper-pagination-horizontal {
+            bottom: 50px;
+        }
+    }
+    
+
+    
+
+.swiper-pagination-bullet {
+    width: 120px;
+    height: 3px;
+    background: $darkButtonColor;
+    border-radius: 0;
+    opacity: 1;
+    margin: 0 15px!important;
+
+    &-active {
+        height: 6px;
+        background-color: #fff;
+    }
+  }
+
+.why-lease {
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+
+.why-lease__list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+    text-align: center;
+}
+
+.why-lease__item-img {
+    margin-bottom: 30px;
+}
+
+.why-lease__title {
+    margin-bottom: 30px;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.why-lease__text {
+    text-align: left;
+}
+
+.how-does {
+    padding-bottom: 150px;
+}
+
+.how-does__inner {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.how-does__text {
+    max-width: 580px;
+    margin: 0 auto;
+}
+
+.how-does__title{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+
+.how-does__list {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    counter-reset: myCounter;
+}
+
+.how-does__item {
+    list-style: none;
+    width: 270px;
+    position: relative;
+    margin-left: auto;
+    box-sizing: content-box;
+    padding: 19px 0 19px 240px;
+    min-width: 63px;
+    &::before {
+        counter-increment: myCounter;
+        content: counter(myCounter);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $blueColor;
+        font-size: 48px;
+        font-weight: 700;
+        color: $colorTextHeader;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+.how-does__item + .how-does__item {
+    margin-top: 40px;
+}
+
+.video {
+    padding-bottom: 150px;
+}
+
+.video__title {
+    margin-bottom: 20px;
+}
+
+.video__text {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    padding-bottom: 50px;
+}
+
+.video__content {
+    display: block;
+    margin: 0 auto;
+}
+
+.important {
+    padding-bottom: 150px;
+}
+
+.important__title {
+    margin-bottom: 20px;
+}
+
+.important__text {
+    max-width: 580px;
+    margin: 0 auto;
+    padding-bottom: 50px;
+}
+
+.important__list {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 40px;
+}
+
+.important__item-img {
+    margin-bottom: 20px;
 }
