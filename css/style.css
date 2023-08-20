@@ -623,11 +623,14 @@ body {
 }
 
 .tabs__content-item {
-  display: -ms-grid;
-  display: grid;
+  display: none;
   -ms-grid-columns: 1fr 40px 1fr 40px 1fr 40px 1fr;
   grid-template-columns: repeat(4, 1fr);
   gap: 100px 40px;
+}
+.tabs__content-item.tabs__content-item_active {
+  display: -ms-grid;
+  display: grid;
 }
 
 .card {
