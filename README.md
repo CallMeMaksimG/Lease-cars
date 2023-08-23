@@ -7,3 +7,5 @@
 - JS;
 - SCSS;
 - БЭМ.
+
+[OPEN](https://callmemaksimg.github.io/Lease-cars/)
